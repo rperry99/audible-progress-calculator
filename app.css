@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  height: 60vh;
+  height: 75vh;
   width: 50vw;
   background: rgba(212, 182, 142, 0.9);
   display: flex;
@@ -83,4 +83,46 @@ button:hover {
 }
 button:active {
   transform: translateY(4px);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+  #total {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 426px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .answer {
+    font-size: 1.2rem;
+  }
+  .container {
+    height: 90%;
+    padding: 20px;
+  }
+  form {
+    flex-direction: column;
+  }
+  .formSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .answer {
+    text-align: center;
+    width: 100%;
+  }
+  input {
+    height: 20px;
+  }
 }
