@@ -56,25 +56,36 @@ body {
 .formSection div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .formSection div input {
   width: 50px;
   margin-left: 15px;
+  height: 30px;
 }
 
 .answer {
   font-size: 1.5rem;
 }
 
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 button {
   background: #7a71b4;
   color: white;
   height: 40px;
-  width: 200px;
+  width: 50%;
   outline: none;
   border: none;
   transition: all 150ms ease-in-out;
+}
+#clear {
+  background: red;
 }
 button:hover {
   background: #867fb4;
