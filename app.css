@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1526721940322-10fb6e3ae94a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: 60vh;
+  width: 50vw;
+  background: rgba(212, 182, 142, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.container form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.formSection {
+  border: solid 2px rgb(180, 151, 113);
+  border-radius: 25px;
+  height: 100px;
+  width: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.formSection div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formSection div input {
+  width: 50px;
+  margin-left: 15px;
+}
+
+.answer {
+  font-size: 1.5rem;
+}
+
+button {
+  background: #7a71b4;
+  color: white;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  background: #867fb4;
+  cursor: pointer;
+  transform: translateY(2px);
+}
+button:active {
+  transform: translateY(4px);
+}
